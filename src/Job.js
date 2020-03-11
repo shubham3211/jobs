@@ -4,6 +4,7 @@ import axios from 'axios';
 import { Grid, Box, Typography } from '@material-ui/core';
 import { LocationOn, Work, AttachMoney } from '@material-ui/icons';
 import Loader from './Loader/Loader';
+import './Job.css'
 
 let renderListedJobs = (listedJobs) => {
   console.log('listedJobs', listedJobs)
@@ -92,22 +93,8 @@ function Job() {
               {renderListedJobs(listedJobs)}
               <Box m={2}>
                 <div 
-                  style={{
-                    float: 'right',
-                    width: '80px', 
-                    height: '16px',
-                    display: 'inline',
-                    paddingTop: '15px',
-                    paddingLeft: '25px',
-                    paddingRight: '25px',
-                    paddingBottom: '15px',
-                    color: 'white',
-                    backgroundColor: '#6c54da',
-                    textAlign: 'center',
-                    cursor: 'pointer'
-                  }} 
-                  onClick={() => setPage((page) => page+1)}
-                  >
+                  className="next-page"
+                  onClick={() => setPage((page) => page+1)}>
                   Next Page
                 </div>
               </Box>

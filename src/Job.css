@@ -1,0 +1,14 @@
+.next-page{
+  float: right;
+  width: 80px;
+  height: 16px;
+  display: inline;
+  padding-top: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 15px;
+  color: white;
+  background-color: #6c54da;
+  text-align: center;
+  cursor: pointer
+}
